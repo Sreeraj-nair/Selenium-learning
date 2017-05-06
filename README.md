@@ -40,7 +40,7 @@ to use Explicit Waits or Implicit Waits.
 
 Warning: Do not mix implicit and explicit waits. Doing so can cause unpredictable wait times. For eg setting an implicit wait of 10 seconds and an explicit wait of 15 seconds could cause a timeout to occur after 20 seconds. 
 
-### Explicit Waits 
+## Explicit Waits 
 An explicit wait is code you define to wait for a certain condition to occur before proceeding further in the code. 
 The worst case of this is Thread.sleep(), which sets the condition to an exact time period to wait.
 ---------------------------------------------------------------------------------------------------
