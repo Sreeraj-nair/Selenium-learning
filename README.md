@@ -12,7 +12,11 @@ Selenium is a set of tools that automates browsers. Primarily, it is for automat
 ## 3. Latest version of Selenium 
 Selenium Stand alone server v3.4.0/WebDriver v3.4.0 
 
-## 4. Browser drivers not developed by SeleniumHQ
+## 4. Browser drivers 
+Browser drivers developed by Selenium 
+1. InternetExplorer Driver server - 32 and 64 bit Windows IE. 
+
+Third party browser drivers not developed by SeleniumHQ. 
 1. Mozilla GeckoDriver 0.16.1
 2. Google Chrome Driver 2.29 
 3. Opera 2.27 
@@ -20,6 +24,15 @@ Selenium Stand alone server v3.4.0/WebDriver v3.4.0
 5. Appium 
 6. Selendroid - Selenium for Android 
 7. ios-driver 
+and many more... 
+
+## 5. Selenium Client and WebDrive Language bindings 
+1. Java 
+2. C# 
+3. Ruby
+4. Python
+5. Javascript (Node)
+and more...
 
 
 
