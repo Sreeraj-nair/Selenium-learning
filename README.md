@@ -24,7 +24,7 @@ Third party browser drivers not developed by SeleniumHQ.
 5. Appium 
 6. Selendroid - Selenium for Android 
 7. ios-driver 
-<br/> and many more... 
+<br/>and many more... 
 
 ## 5. Selenium Client and WebDrive Language bindings 
 1. Java 
@@ -32,7 +32,7 @@ Third party browser drivers not developed by SeleniumHQ.
 3. Ruby
 4. Python
 5. Javascript (Node)
-<br/> and more...
+<br/>and more...
 
 
 
