@@ -32,9 +32,9 @@ dataProvider name equals to the name of this annotation.
   - From the command line
 
 testng.xml file sample - 
-   ```xml         
-   <suite name="Suite1" verbose="1" >  
-    <test name="Nopackage" >
+    ```xml         
+      <suite name="Suite1" verbose="1" >  
+       <test name="Nopackage" >
         <classes>
           <class name="NoPackageTest" />
         </classes>
@@ -57,28 +57,34 @@ From run.bat
 
 ## How to group tests in TestNG? 
 
+  @Test
   public class Test1 {
-  @Test(groups = { "functest", "checkintest" })
-  public void testMethod1() {
-  }
+    @Test(groups = { "windows.checkintest" })
+    public void testWindowsOnly() {
+    }
  
-  @Test(groups = {"functest", "checkintest"} )
-  public void testMethod2() {
-  }
+    @Test(groups = {"linux.checkintest"} )
+    public void testLinuxOnly() {
+    }
  
-  @Test(groups = { "functest" })
-  public void testMethod3() {
+   @Test(groups = { "windows.functest" )
+   public void testWindowsToo() {
+    }
   }
-}
+
 
 ```xml
 <test name="Test1">
   <groups>
     <run>
-      <include name="functest"/>
+      <include name="windows.*"/>
+      <exclude name=".*brokenTestMethod.*"/>
     </run>
   </groups>
+ 
   <classes>
     <class name="example1.Test1"/>
   </classes>
 </test>
+
+```xml
