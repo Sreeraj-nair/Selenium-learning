@@ -27,7 +27,7 @@ Important Methods:
     
     |   Method Name | Description | 
     |   ----------  |  ---------  |
-    | void close()| Close the current browser window.|
+    | void close()  | Close the current browser window. |
     
     
     <br/>
