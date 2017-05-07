@@ -1,5 +1,10 @@
 ## Capabilities and DesiredCapabilities in Selenium WebDriver 
 
+Interface Capabilities 
+
+Implementing Class 
+DesiredCapabilities, ImmutableCapabilities
+
 ### What is DesiredCapabilities? 
 Every testing scenario should be executed on some specific environment. This environment can be a web browser, Mobile device, 
 mobile emulator, mobile simulator and so on. 
@@ -58,6 +63,7 @@ Desired Capabilities are more useful in cases like:
       }
   
     }
+
 
 
 
