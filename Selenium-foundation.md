@@ -34,4 +34,9 @@ Important Methods:
     java.util.Set<java.lang.String> getWindowHandles(): Return a set of window handles which can be used to iterate over all open windows 
     of this WebDriver instance by passing them to switchTo().WebDriver.Options.window(). 
     navigate(): An abstraction allowing the driver to access browser's history and navigate to the current url. 
-    WebDriver.TargetLocator switchTo(): Send future commands to a different frame or window. 
+    WebDriver.TargetLocator switchTo(): Send future commands to a different frame or window.
+
+## By Class? 
+Direct Known Subclasses:
+By.ByClassName, By.ByCssSelector, By.ById, By.ByLinkText, By.ByName, By.ByPartialLinkText, By.ByTagName, By.ByXPath, ByAll, ByChained, ByIdOrName
+
