@@ -29,12 +29,15 @@ Waterfall
   
  ## 3 Roles 
  
- ### Product Owner - respinsible for defining the features that are required in the product. 
+ ### Product Owner - 
+ Respinsible for defining the features that are required in the product. 
  
- ### Scrum Master - Leader to the team, responsible for protecting the team and the process. Keeps the work going, setting up meetings 
+ ### Scrum Master - 
+ Leader to the team, responsible for protecting the team and the process. Keeps the work going, setting up meetings 
  and so on. 
  
- ### Team - Developers, Testers, Writers, Designers and everyone else involved in the project. 
+ ### Team - 
+ Developers, Testers, Writers, Designers and everyone else involved in the project. 
  
  ## 3 Artifacts 
  
