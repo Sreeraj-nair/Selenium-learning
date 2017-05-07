@@ -32,7 +32,6 @@ dataProvider name equals to the name of this annotation.
   - From the command line
 
 testng.xml file sample - 
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >    
  <suite name="Suite1" verbose="1" >  
     <test name="Nopackage" >
         <classes>
