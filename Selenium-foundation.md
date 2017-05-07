@@ -26,7 +26,7 @@ http://seleniumhq.github.io/selenium/docs/api/java/index.html
 Important Methods: 
     
     |   Method Name | Description | 
-       ------------   ----------  |
+    |   ----------  |  ---------  |
     | void close()| Close the current browser window.|
     
     
