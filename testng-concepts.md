@@ -32,7 +32,8 @@ dataProvider name equals to the name of this annotation.
   - From the command line
 
 testng.xml file sample - 
- <suite name="Suite1" verbose="1" >  
+   ```xml         
+   <suite name="Suite1" verbose="1" >  
     <test name="Nopackage" >
         <classes>
           <class name="NoPackageTest" />
@@ -46,6 +47,7 @@ testng.xml file sample -
         </classes>
      </test>
   </suite>
+  ```xml
 
 
 
