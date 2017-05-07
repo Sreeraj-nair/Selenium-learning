@@ -23,16 +23,31 @@ test method that belongs to any of these groups is invoked.
 @BeforeMethod: The annotated method will be run before each test method. 
 @AfterMethod: The annotated method will be run after each test method.
 
-alwaysRun 
-dependsOnGroups 
-dependsOnMethods
-enabled
-
-@DataProvider: Marks a method as supplying data for a test method. The annotated method must return an Object[][] where each Object[] can 
-be assigned the parameter list of the test method. The @Test method that wants to receive data from this DataProvider needs to use a 
+@DataProvider: Marks a method as supplying data for a test method. The annotated method must return an Object[][] where each Object[] can be assigned the parameter list of the test method. The @Test method that wants to receive data from this DataProvider needs to use a 
 dataProvider name equals to the name of this annotation.
 
-name 
-parallel
+## How to invoke TestNG? 
+  - With a testng.xml file 
+  - With ant 
+  - From the command line
+
+testng.xml file sample - 
+    <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >    
+    <suite name="Suite1" verbose="1" >  
+      <test name="Nopackage" >
+        <classes>
+          <class name="NoPackageTest" />
+        </classes>
+      </test>
+ 
+      <test name="Regression1">
+        <classes>
+          <class name="test.sample.ParameterSample"/>
+          <class name="test.sample.ParameterTest"/>
+        </classes>
+     </test>
+
+    </suite>
+
 
 
