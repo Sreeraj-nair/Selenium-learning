@@ -26,9 +26,13 @@ http://seleniumhq.github.io/selenium/docs/api/java/index.html
 Important Methods: 
 
     void close(): Close the current browser window.
+    <br/>
     WebElement findElement(By by): Find the first WebElement using the given method. 
+        <br/>
     java.util.List<WebElement> findElements(By by): Find all WebElements within the current page using given mechanism. 
+        <br/>
     void get(String url): load a new web page in the current browser window. 
+            <br/>
     String getTitle(): Get title of the current page. 
     String getWindowHandle(): Return an opaque handle to this window that uniquely identifies it within this driver instance.
     java.util.Set<java.lang.String> getWindowHandles(): Return a set of window handles which can be used to iterate over 
