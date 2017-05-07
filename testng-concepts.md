@@ -54,3 +54,31 @@ From command line -
 
 From eclipse 
 From run.bat
+
+## How to group tests in TestNG? 
+
+  public class Test1 {
+  @Test(groups = { "functest", "checkintest" })
+  public void testMethod1() {
+  }
+ 
+  @Test(groups = {"functest", "checkintest"} )
+  public void testMethod2() {
+  }
+ 
+  @Test(groups = { "functest" })
+  public void testMethod3() {
+  }
+}
+
+```xml
+<test name="Test1">
+  <groups>
+    <run>
+      <include name="functest"/>
+    </run>
+  </groups>
+  <classes>
+    <class name="example1.Test1"/>
+  </classes>
+</test>
