@@ -24,6 +24,9 @@ http://seleniumhq.github.io/selenium/docs/api/java/index.html
  ChromeDriver, EdgeDriver, EventFiringWebDriver, FirefoxDriver, InternetExplorerDriver, OperaDriver, RemoteWebDriver, SafariDriver
 
 Important Methods: 
+| Column Name   | Col Name  | 
+| ----          |   -----   | 
+| Test          |   Test 2  | 
     
     |   Method Name | Description | 
     |   ----------  |  ---------  |
