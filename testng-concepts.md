@@ -49,5 +49,8 @@ testng.xml file sample -
   </suite>
   ```xml
 
+From command line - 
+   - java org.testng.TestNG testng1.xml [testng2.xml testng3.xml ...]
 
-
+From eclipse 
+From run.bat
