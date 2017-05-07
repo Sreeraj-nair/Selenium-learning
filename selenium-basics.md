@@ -40,8 +40,8 @@ to use Explicit Waits or Implicit Waits.
 
 Warning: Do not mix implicit and explicit waits. Doing so can cause unpredictable wait times. For eg setting an implicit wait of 10 seconds and an explicit wait of 15 seconds could cause a timeout to occur after 20 seconds. 
 
-    Explicit Waits - An explicit wait is code you define to wait for a certain condition to occur before proceeding further in the code. 
-    The worst case of this is Thread.sleep(), which sets the condition to an exact time period to wait.
+Explicit Waits - An explicit wait is code you define to wait for a certain condition to occur before proceeding further in the code. 
+The worst case of this is Thread.sleep(), which sets the condition to an exact time period to wait.
 ---------------------------------------------------------------------------------------------------
 WebDriver driver = new FirefoxDriver();
 driver.get("http://somedomain/url_that_delays_loading");
@@ -49,15 +49,15 @@ WebElement myDynamicElement = (new WebDriverWait(driver,10))
 .until(ExpectedConditions.presenceOfElementLocated(By.id("myDynamicElement")));
 ----------------------------------------------------------------------------------------------------
     
-    This waits up to 10 seconds before throwing a TimeoutException or if it finds the element will return it in 0 - 10 seconds.             WebDriverWait by default calls the ExpectedCondition every 500 milliseconds until it returns successfully. A successful return value    for the ExpectedCondition function type is a Boolean value of true, or a non-null object.
+This waits up to 10 seconds before throwing a TimeoutException or if it finds the element will return it in 0 - 10 seconds.             WebDriverWait by default calls the ExpectedCondition every 500 milliseconds until it returns successfully. A successful return value    for the ExpectedCondition function type is a Boolean value of true, or a non-null object.
 
-    Expected Conditions - Check whether an element is Clickable (it is Displayed and Enabled)
-    WebDriverWait wait = new WebDriverWait(driver, 10);
-    WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id("someid")));
+Expected Conditions - Check whether an element is Clickable (it is Displayed and Enabled)
+WebDriverWait wait = new WebDriverWait(driver, 10);
+WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id("someid")));
 
-    Implicit Waits - An implicit wait is to tell the WebDriver to poll the DOM for a certain amount of time when trying to find an      
-    element or elements if they are no immediately available. The default setting is 0. Once set, the implicit wait is set for the life
-    of the WebDriver object instance. 
+Implicit Waits - An implicit wait is to tell the WebDriver to poll the DOM for a certain amount of time when trying to find an      
+element or elements if they are no immediately available. The default setting is 0. Once set, the implicit wait is set for the life
+of the WebDriver object instance. 
 
 -----------------------------------------------------------------------------------------------------
 WebDriver driver = new FirefoxDriver();
