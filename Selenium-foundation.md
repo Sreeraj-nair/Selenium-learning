@@ -24,10 +24,11 @@ http://seleniumhq.github.io/selenium/docs/api/java/index.html
  ChromeDriver, EdgeDriver, EventFiringWebDriver, FirefoxDriver, InternetExplorerDriver, OperaDriver, RemoteWebDriver, SafariDriver
 
 Important Methods: 
-
     |Method Name| Description | 
     ------------ ------------
     | void close()| Close the current browser window.|
+    
+    
     <br/>
     WebElement findElement(By by): Find the first WebElement using the given method. 
         <br/>
