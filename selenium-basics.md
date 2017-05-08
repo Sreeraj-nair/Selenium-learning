@@ -42,6 +42,7 @@ Warning: Do not mix implicit and explicit waits. Doing so can cause unpredictabl
 
 Explicit Waits - An explicit wait is code you define to wait for a certain condition to occur before proceeding further in the code. 
 The worst case of this is Thread.sleep(), which sets the condition to an exact time period to wait.
+
 ---------------------------------------------------------------------------------------------------
 WebDriver driver = new FirefoxDriver();
 driver.get("http://somedomain/url_that_delays_loading");
