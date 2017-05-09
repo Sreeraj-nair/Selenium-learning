@@ -57,19 +57,19 @@ From run.bat
 
 ## How to group tests in TestNG? 
 
-  @Test
-  public class Test1 {
-    @Test(groups = { "windows.checkintest" })
-    public void testWindowsOnly() {
-    }
+   @Test
+   public class Test1 {
+   @Test(groups = { "windows.checkintest" })
+   public void testWindowsOnly() {
+   }
  
-    @Test(groups = {"linux.checkintest"} )
-    public void testLinuxOnly() {
-    }
+   @Test(groups = {"linux.checkintest"} )
+   public void testLinuxOnly() {
+   }
  
    @Test(groups = { "windows.functest" )
    public void testWindowsToo() {
-    }
+   }
   }
 
 
