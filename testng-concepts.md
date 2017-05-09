@@ -1,90 +1,29 @@
-## What is TestNG? 
-TestNG is a testing framework designed to simplify a broad range of testing needs, from unit testing to integration testing. 
+# TestNG 
 
-  - Write the business logic of your test and insert TestNG annotations in your code. 
-  - Add the information about your test (e.g. the class name, the groups you wish to run, etc...) in a testng.xml file or in build.xml.
-  - Run TestNG
+### 1. What is TestNG? 
+  - TestNG is a testing framework (inspired by junit and nunit). 
+  - Can be used for unit testnig, integration testing and for designing external frameworks like Selenium. 
   
-## Annotations available in TestNG? 
-@BeforeSuite: The annotated method will be run before all tests in this suite have run. 
-@AfterSuite: The annotated method will be run after all tests in this suite have run. 
+  TestNG is designed to cover all categories of tests:  unit, functional, end-to-end, integration, etc...
 
-@BeforeTest: The annotated method will be run before any test method belonging to the classes inside the <test> tag is run. 
-@AfterTest: The annotated method will be run after all the test methods belonging to the classes inside the <test> tag have run. 
+### 2. Features of TestNG
+    1. Annotations 
+    2. Run your tests in arbitrarily in big thread pools 
+    3. Test your code is multithread safe. 
+    4. Flexible  test configuration. 
+    5. Support for data-driven testing (with @DataProvider). 
+    6. Support for parameters. 
+    7. Powerful execution model (no more testsuite)
+    8. Supported by a veriety of tools and plug-ins (Eclipse, IDEA, Maven, etc..)
+    9. Embeds BeanShell for further flexibility.
+    10. Default JDK functions for runtime and logging (no dependencies).
+    11. Dependent methods for application server testing.
 
-@BeforeGroups: The list of groups that this configuration method will run before. This method is guaranteed to run shortly before the 
-first test method that belongs to any of these groups is invoked. 
-@AfterGroups: The list of groups that this configuration method will run after. This method is guaranteed to run shortly after the last 
-test method that belongs to any of these groups is invoked. 
-
-@BeforeClass: The annotated method will be run before the first test method in the current class is invoked. 
-@AfterClass: The annotated method will be run after all the test methods in the current class have been run. 
-
-@BeforeMethod: The annotated method will be run before each test method. 
-@AfterMethod: The annotated method will be run after each test method.
-
-@DataProvider: Marks a method as supplying data for a test method. The annotated method must return an Object[][] where each Object[] can be assigned the parameter list of the test method. The @Test method that wants to receive data from this DataProvider needs to use a 
-dataProvider name equals to the name of this annotation.
-
-## How to invoke TestNG? 
-  - With a testng.xml file 
-  - With ant 
-  - From the command line
-
-testng.xml file sample - 
-    ```xml         
-      <suite name="Suite1" verbose="1" >  
-       <test name="Nopackage" >
-        <classes>
-          <class name="NoPackageTest" />
-        </classes>
-     </test>
- 
-     <test name="Regression1">
-        <classes>
-          <class name="test.sample.ParameterSample"/>
-          <class name="test.sample.ParameterTest"/>
-        </classes>
-     </test>
-  </suite>
-  ```xml
-
-From command line - 
-   - java org.testng.TestNG testng1.xml [testng2.xml testng3.xml ...]
-
-From eclipse 
-From run.bat
-
-## How to group tests in TestNG? 
-
-   @Test
-   public class Test1 {
-   @Test(groups = { "windows.checkintest" })
-   public void testWindowsOnly() {
-   }
- 
-   @Test(groups = {"linux.checkintest"} )
-   public void testLinuxOnly() {
-   }
- 
-   @Test(groups = { "windows.functest" )
-   public void testWindowsToo() {
-   }
-  }
-
-
-```xml
-<test name="Test1">
-  <groups>
-    <run>
-      <include name="windows.*"/>
-      <exclude name=".*brokenTestMethod.*"/>
-    </run>
-  </groups>
- 
-  <classes>
-    <class name="example1.Test1"/>
-  </classes>
-</test>
-
-```xml
+  
+### 2. How do you write a test using TestNG? 
+  - Write the business logic of test test and Insert TestNG annotations in the code. 
+  - Add the information about the test (eg the class name, the groups you wish to run, so on) in the testng.xml or in build.xml file. 
+  - Run TestNG. 
+  
+  
+  
