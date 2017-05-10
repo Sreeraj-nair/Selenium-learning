@@ -20,14 +20,25 @@ finding mechanisms provided through static methods of this class:
 
 Basically,there are 8 ways to locate web elements. 
 
-1) Id - To select the element with a specified @Id attribute. Feasible for elements with fixed IDs, but not for the generated ones. 
+1) Id: To select the element with a specified @Id attribute. Feasible for elements with fixed IDs, but not for the generated ones. 
 Eg
 
         <input id="user" class="required" type="text"/>
         WebElement item = driver.findElement(By.id("user"));
 
-2) Name - 
-3) LinkText
+2) Name: To select the first element with the specified @Name attribute. Feasile for elements with fixed Name,but not for the generated
+ones. 
+Eg
+
+        <input id="user" name="admin" class="required" type="text"/>
+        WebElement locator = driver.findElement(By.name("admin"));
+
+3) LinkText:To select the link element which contains the matching text. 
+Eg
+
+        <a href="http://www.mywebpage.com">How to use locators?</a>
+        WebElement item = driver.findElement(By.linkText("ContactUsLink"));
+
 4) PartialLinkText
 5) TagName
 6) CSSSelector
