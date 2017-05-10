@@ -66,7 +66,8 @@ Eg
         WebElement element =driver.findElement(By.className(“sample”));
 7) XPath: XPath is the perfect way of walking through the DOM structure of the web page. XPath locators are robust and reliable. 
 It is one method which guarantees to locate any element on the page using the XPath expression. 
-Note*** XPath may change if there are changes in the web application. 
+
+        Note*** XPath may change if there are changes in the web application. 
 
   - Absolute XPath
   - Relative XPath
