@@ -11,20 +11,20 @@ subclass this class and override the protected methods as required, though it is
 finding mechanisms provided through static methods of this class: 
 
         public WebElement findElement(WebDriver driver) 
-      { 
-      WebElement element = driver.findElement(By.id(getSelector())); 
-      if (element == null) 
-        element = driver.findElement(By.name(getSelector()); 
-      return element; 
-      }
+        { 
+                WebElement element = driver.findElement(By.id(getSelector())); 
+                if (element == null) 
+                element = driver.findElement(By.name(getSelector()); 
+                return element; 
+        }
 
 Basically,there are 8 ways to locate web elements. 
 
 1) Id - To select the element with a specified @Id attribute. Feasible for elements with fixed IDs, but not for the generated ones. 
+Eg
 
-      Eg
-      <input id="user" class="required" type="text"/>
-       WebElement item = driver.findElement(By.id("user"));
+        <input id="user" class="required" type="text"/>
+        WebElement item = driver.findElement(By.id("user"));
 
 2) Name - 
 3) LinkText
