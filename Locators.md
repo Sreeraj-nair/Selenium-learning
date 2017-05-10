@@ -69,9 +69,28 @@ It is one method which guarantees to locate any element on the page using the XP
 
         Note*** XPath may change if there are changes in the web application. 
 
-  - Absolute XPath
-  - Relative XPath
-8) IdOrName
+  1. Absolute XPath: It starts from the root element within the web page or part of the page and goes to identify the target element. 
+  To use locators like the XPath is easy as you give the direct element path. But the XPath would break when the element structure 
+  changes. Eg
+        
+        Absolute XPath Example:
+        HTML/head/body/table/tr/td
+               
+  2. Relative XPath: The relative XPath are easy to manage as they are short and concise. It is also better than the previous XPath 
+  style as it may survive the changes in the Page HTML to a certain degree. Though, building a relative XPath is time-consuming and 
+  quite difficult as you need to check all the nodes to form the path. Eg
+        
+        Relative XPath Example:
+        //table/tr/td
+        
+Highlights 
+- Guarantees to find accurate locators.
+
+Corns 
+- It is slow as compared to CSS.
+- It’s browser dependent, and there are differences in IE vs. Firefox XPath implementations.
+
+8) IdOrName: Use either one Id or Name. 
 
 
 
