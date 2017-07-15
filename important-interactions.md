@@ -36,4 +36,11 @@
     dropdown.selectByVisibleText("Italy");
     dropdown.selectByIndex(2);
     
+  ### Drag and Drop 
+  
+    Actions action = new Actions(driver);
+    action.dragAndDrop(WebElement sourceLocator, destinationLocator).build().perform();
     
+    
+
+
